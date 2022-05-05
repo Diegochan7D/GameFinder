@@ -8,4 +8,9 @@ Screenshots:
 ![image](https://user-images.githubusercontent.com/74662178/166856214-f2de4f3a-85a9-48dc-9878-07d5064aae40.png)  
 ![image](https://user-images.githubusercontent.com/74662178/166856292-a0cdc785-5ac6-4697-b7e2-fcb107716139.png)  
   
+How to install locally:  
+1. clone this repository  
+2. add your own mongoDB url in add.js  
+3. run npm install  
+4. run npm start
 
