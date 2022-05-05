@@ -1,0 +1,45 @@
+
+
+    <div class="jumbotron">
+        <h1>Steam Game Finder </h1>
+        <p></p>
+    </div>
+
+    <p class="p-3 m-3 border border-primary bg-light">
+        You can find info of any game in Steam with this application.
+        <strong>(Please log in before searching)</strong>
+    </p>
+    
+    <% if (true || loggedIn) {%>  
+        <form method="post" action="/games/byName">
+            Show Games by name: 
+            <input type="text" name="name" 
+                   placeholder="e.g. Overcooked">
+            <input type="submit">
+        </form>
+        <br>
+        <form method="post" action="/games/byPrice">
+            Show Games by Price: 
+            <input type="text" name="price" 
+                   placeholder="e.g. 29.99">
+            <input type="submit">
+        </form>
+        <br>
+        <form method="post" action="/games/byDescription">
+            Show Games by Description: 
+            <input type="text" name="description" 
+                   placeholder="e.g. Working as a team">
+            <input type="submit">
+        </form>
+        <br>
+        <form method="post" action="/games/byDeveloper">
+            Show Games by Developer: 
+            <input type="text" name="developer" 
+                   placeholder="e.g. CD PROJEKT RED">
+            <input type="submit">
+        </form>
+        <br>
+        <a href="/wishList/show">Show Wish List</a>
+    <% } %>
+
+

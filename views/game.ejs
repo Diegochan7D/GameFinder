@@ -1,0 +1,17 @@
+<div class="bg-light m-5 p-2 border border-primary border-2">
+    <div class="">
+        <strong><%= game.name %></strong>
+        
+    </div>
+    <div class="mb-1">
+        Price: $<%=game.price %>
+    </div>
+    <div><a href="/addGame/<%= game['_id'] %>">(add to wish list)</a></div>
+    
+    <div class="p-3">
+        <%=game.short_description %>
+    </div>
+</div>
+ 
+<hr>
+

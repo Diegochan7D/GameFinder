@@ -1,0 +1,48 @@
+<h1>The games are</h1>
+<hr>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Release Date</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Recommendations</th>
+            <th>Metacritic Score</th>
+            <th>Developer</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+    <% for (game of games) {%>
+      <tr class="mb-2"> 
+        <td><%= game.release_date %></td>
+        <td>
+            <a href="/games/show/<%=game._id %>">
+            <%=  game.name %>
+            </a>
+        </td>
+
+        <td>
+            <strong><%= game.short_description %></strong>
+        </td>
+
+        <td>
+            $<%=game.price %>
+        </td>
+
+        <td>
+            <%= game.recommendations %> <br>        
+        </td>
+
+        <td>
+            <%= game.metacritic_score %> <br>        
+        </td>
+         
+        <td>
+          <%=  game.developers %>
+        </td>
+    </tr>
+    <% } %>
+    </tbody>
+</table>
+

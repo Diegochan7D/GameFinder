@@ -1,0 +1,14 @@
+<h1>WishList</h1>
+<ul>
+    <% for (game of games){%>
+        <li> 
+            <%= game.name %>
+            -
+            $<%= game.price %>
+            <a href="/wishList/remove/<%= game._id %>">Remove</a>
+
+        </li>
+    <% } %>
+    <br>
+    <a href="/">Find more games</a>
+</ul>
