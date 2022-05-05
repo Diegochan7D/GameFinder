@@ -34,7 +34,9 @@ const WishList = require('./models/WishList')
 
 const mongoose = require( 'mongoose' );
 
-const CONNECTION_URL = 'mongodb+srv://VII:VII666@cluster0.cjsng.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+///////////////////
+// put your mongoDB url here:( CONNECTION_URL = '...')
+///////////////////
 
 mongoose.connect( CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true } );
 // fix deprecation warnings
